@@ -15,7 +15,7 @@ class Rectangle {
 		}
 		
 		void showValues(float pole, float obwod) {
-			cout << "Pole prostok¹tu to " << pole << ", a jego obwód wynosi " << obwod;
+			cout << "Pole prostokÂ¹tu to " << pole << ", a jego obwÃ³d wynosi " << obwod;
 		}
 };
 
@@ -25,9 +25,9 @@ int main() {
 	float a;
 	float b;
 
-	cout << "Podaj d³ugoœæ 1 boku: ";
+	cout << "Podaj dÂ³ugoÅ“Ã¦ 1 boku: ";
 	cin >> a;
-	cout << "Podaj d³ugoœæ 2 boku: ";
+	cout << "Podaj dÂ³ugoÅ“Ã¦ 2 boku: ";
 	cin >> b;
 		
 	Rectangle obj;
@@ -38,3 +38,4 @@ int main() {
 		
 	return 0;
 }
+//essa
