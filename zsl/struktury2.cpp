@@ -23,7 +23,7 @@ void setId(unsigned int x, string name1, string surname1, unsigned short int dd1
  
 void Worker::showAllData(){
     cout << "Dane pracownika:\n" << "Id: " << id
-    << "\nImiê i Nazwisko:   " << name << " "<< surname
+    << "\nImiÃª i Nazwisko:   " << name << " "<< surname
     << "\nData urodzenia: " << dateBirthday.dd << "-"
     <<dateBirthday.mm << "-"
     << dateBirthday.rrrr << "r.\n\n";
