@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
 	setlocale(LC_CTYPE,"Polish");
 	
 	Student student {"Jan", "Siema", 100, {6, 9, 2000}, {4, 5, 3, 6, 4} };
-	cout << "Imiê i nazwisko: " << student.name << " "
+	cout << "ImiÃª i nazwisko: " << student.name << " "
 		 << student.surname << endl << "\nID: " << student.id << endl
 		 << "\nData urodzenia: "
 		 << student.dateBirthday.d << "-" << student.dateBirthday.m
