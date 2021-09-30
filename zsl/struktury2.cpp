@@ -2,7 +2,7 @@
 using namespace std;
  
 struct Date{
-    unsigned short int dd, mm, rrrr;
+    unsigned short int dd, mm, yyyy;
 };
  
 class Worker{
@@ -12,28 +12,25 @@ class Worker{
     Date dateBirthday {};
    
 void showAllData();
-void setId(unsigned int x, string name1, string surname1, unsigned short int dd1,unsigned short int mm1,unsigned short int rrrr1 ){
-    id=x;
-    name=name1;
-    surname=surname1;
-    dateBirthday.dd = dd1;
-    dateBirthday.mm = mm1;
-    dateBirthday.rrrr  = rrrr1;
+void setId(unsigned int id, string name, string surname, Date dateBirthday){
+    Worker::id=id;
+    Worker::name=name;
+    Worker::surname=surname;
+    Worker::dateBirthday=dateBirthday;
 }};
  
 void Worker::showAllData(){
     cout << "Dane pracownika:\n" << "Id: " << id
-    << "\nImiê i Nazwisko:   " << name << " "<< surname
+    << "\nImie i Nazwisko: " << name << " "<< surname
     << "\nData urodzenia: " << dateBirthday.dd << "-"
     <<dateBirthday.mm << "-"
-    << dateBirthday.rrrr << "r.\n\n";
-   
+    << dateBirthday.yyyy << "r.\n\n"; 
 }
  
 int main(int argc, char** argv){
     setlocale(LC_CTYPE, "polish");
     Worker pracownik;
-    pracownik.setId(100, "Janusz","Nowak", 16 , 9 , 2021);
+    pracownik.setId(100, "Janusz","Nowak", {16, 9, 1990});
     pracownik.showAllData();
    
     return 0;
